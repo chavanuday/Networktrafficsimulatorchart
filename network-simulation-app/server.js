@@ -9,7 +9,8 @@ const app = express();
 app.use(cors({
     origin: 'https://networktrafficsimulatorchart.vercel.app/', // Your React app's URL
     methods: ['GET', 'POST'],
-    allowedHeaders: ['Content-Type']
+    allowedHeaders: ['Content-Type'],
+    credentials: true
 }));
 
 app.use(express.json());
