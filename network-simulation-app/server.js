@@ -7,7 +7,7 @@ const app = express();
 
 // CORS configuration
 app.use(cors({
-    origin: 'http://localhost:3000', // Your React app's URL
+    origin: 'https://networktrafficsimulatorchart.vercel.app/', // Your React app's URL
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type']
 }));
